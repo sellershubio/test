@@ -29,6 +29,7 @@ public class login extends BaseTest{
 	@Test(priority=1)
 	public void LoginTest() throws InterruptedException
 	{
+		System.out.println("Login Sucess");
 		Thread.sleep(3000);
 		LPE.login();
 	}
