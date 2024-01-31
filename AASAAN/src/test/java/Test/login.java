@@ -39,7 +39,7 @@ public class login extends BaseTest{
 	{
 	System.out.println("Login Sucess2");
 		
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		HPE.ClickOnHomePage();
 		Thread.sleep(3000);
 		HPE.ClickOnProductsPage();
