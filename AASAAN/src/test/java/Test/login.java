@@ -38,7 +38,7 @@ public class login extends BaseTest{
 	public void ProductsPageTest() throws InterruptedException
 	{
 	System.out.println("Login Sucess2");
-		
+		LPE.login();
 		Thread.sleep(8000);
 		HPE.ClickOnHomePage();
 		Thread.sleep(3000);
