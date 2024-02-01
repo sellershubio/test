@@ -142,4 +142,83 @@ public class AddProductPageEvents extends BaseTest
 		ef.getWebElement("XPATH", AddProductPageElements.SelectSalesTaxMulti).click();
 	}
 
+	public void Logistics() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnLogistics).click();
+		ef.getWebElement("XPATH", AddProductPageElements.UpdateQty).clear();
+		ef.getWebElement("XPATH", AddProductPageElements.UpdateQty).sendKeys("20");
+		ef.ScrollToEndOfThePage();
+		ef.getWebElement("XPATH", AddProductPageElements.Width).sendKeys("20");
+		ef.getWebElement("XPATH", AddProductPageElements.Height).sendKeys("20");
+		ef.getWebElement("XPATH", AddProductPageElements.Depth).sendKeys("20");
+		ef.getWebElement("XPATH", AddProductPageElements.Weight).sendKeys("20");
+	}
+	
+	public void SEO() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnSEOTab).click();
+		ef.getWebElement("XPATH", AddProductPageElements.SEOEnable).click();
+		ef.getWebElement("XPATH", AddProductPageElements.SEOPageTitle).sendKeys("Seo Page Title");
+		ef.getWebElement("XPATH", AddProductPageElements.SEOMetaDescription).sendKeys("Seo Meta description");
+				
+	}
+	
+	public void Variants() throws InterruptedException
+	{
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnVariantsTab).click();
+		 Thread.sleep(2000);
+		ef.getWebElement("XPATH", AddProductPageElements.SelectOption).click();
+		Thread.sleep(3000);
+		ef.getWebElement("XPATH", AddProductPageElements.SelectOptionColor).click();
+		ef.getWebElement("XPATH", AddProductPageElements.SelectOptionValue).click();
+		Thread.sleep(3000);
+		ef.getWebElement("XPATH", AddProductPageElements.SelectOptionColorValue1).click();
+		ef.getWebElement("XPATH", AddProductPageElements.SelectOptionColorValue2).click();
+		Thread.sleep(3000);
+		ef.getWebElement("XPATH", AddProductPageElements.VariantsMultiSelectionOption).click();
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnVariantCheckBox).click();
+		 Thread.sleep(3000);
+		 ef.ScrollToEndOfThePage();
+		ef.getWebElement("XPATH", AddProductPageElements.addVariantsButton).click();
+		 Thread.sleep(3000);
+		ef.getWebElement("XPATH", AddProductPageElements.SelectVariantDropdown).click();
+		Thread.sleep(3000);
+		ef.getWebElement("XPATH", AddProductPageElements.CreateVariantsFromallAttributes).click();
+		Thread.sleep(3000);
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnGo).click();
+		Thread.sleep(3000);
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnMenuIcon).click();
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnEdit).click();
+		 Thread.sleep(3000);
+		 ef.ScrollToEndOfThePage();
+		ef.getWebElement("XPATH", AddProductPageElements.VariantSKU).click();
+		ef.getWebElement("XPATH", AddProductPageElements.VariantSKU).clear();
+		ef.getWebElement("XPATH", AddProductPageElements.VariantSKU).sendKeys("skuvariant");
+		 Thread.sleep(3000);
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnVariantPricingTab).click();
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnBackToPage).click();
+		 Thread.sleep(3000);
+	}
+	
+	public void Recommendation() throws InterruptedException
+	{
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnRecomendationTab).click();
+		 Thread.sleep(3000);
+		ef.getWebElement("XPATH", AddProductPageElements.RecomendadProductsEnable).click();
+		ef.getWebElement("XPATH", AddProductPageElements.SelectProducts).click();
+		ef.getWebElement("XPATH", AddProductPageElements.SearchProduct).click();
+		ef.getWebElement("XPATH", AddProductPageElements.RecMultiSelectOption).click();
+	}
+	
+	public void SaveProduct()
+	{
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnSaveButton).click();
+	}
+	
+	public void Cancel() 
+	{
+		ef.getWebElement("XPATH", AddProductPageElements.ClickOnCancelButton).click();
+	}
 }

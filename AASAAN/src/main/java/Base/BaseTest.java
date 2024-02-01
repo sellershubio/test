@@ -23,7 +23,7 @@ public class BaseTest {
 
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
-		options.addArguments("--headless");
+		//options.addArguments("--headless");
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-gpu");
 		options.addArguments("--disable-dev-shm-usage");

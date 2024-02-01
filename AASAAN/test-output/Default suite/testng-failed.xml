@@ -5,8 +5,8 @@
     <classes>
       <class name="Test.login">
         <methods>
+          <include name="EditProduct"/>
           <include name="Setup"/>
-          <include name="ProductsPageTest"/>
         </methods>
       </class> <!-- Test.login -->
     </classes>
