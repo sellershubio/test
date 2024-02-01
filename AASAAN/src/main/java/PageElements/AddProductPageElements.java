@@ -43,4 +43,6 @@ public interface AddProductPageElements {
 	String SalesTax="//*[@class='s-content__left' and text()='Select..']";
 	String SelectCGST="//*[@class='body-md ls-md mb-0' and text()='cgst']";
 	String SelectSalesTaxMulti="//*[@class='multi__selected-options']";
+	
+	
 }
