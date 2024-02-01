@@ -1,0 +1,13 @@
+Base/BaseTest.class
+PageEvents/HomePageEvents.class
+PageEvents/BrandsPageEvents.class
+Utils/ElementFetch.class
+PageEvents/CategoriesPageEvents.class
+PageElements/BrandsPageElements.class
+PageElements/CategoriesPageElements.class
+PageEvents/LoginPageEvents.class
+Utils/Constants.class
+PageElements/HomePageElements.class
+PageElements/AddProductPageElements.class
+PageEvents/AddProductPageEvents.class
+PageElements/LoginPageElements.class
