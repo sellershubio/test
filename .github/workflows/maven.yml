@@ -47,8 +47,8 @@ jobs:
       run: mvn -B clean test --file AASAAN/pom.xml
 
     - name: Archive code coverage results
-        uses: actions/upload-artifact@v4
-        with:
-          name: code-coverage-report
-          path: ./reports/*.html
+      uses: actions/upload-artifact@v4
+      with:
+        name: code-coverage-report
+        path: ./reports/*.html
 
