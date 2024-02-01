@@ -8,6 +8,7 @@
           <include name="HideOrUnHideCategoryTest"/>
           <include name="CreateCategoryTest"/>
           <include name="Setup"/>
+          <include name="DargAndDropTest"/>
           <include name="EditProduct"/>
         </methods>
       </class> <!-- Test.login -->

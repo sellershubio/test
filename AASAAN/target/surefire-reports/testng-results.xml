@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="9" failed="3" skipped="0">
+<testng-results ignored="0" total="12" passed="8" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-01T19:48:29Z" name="Suite" finished-at="2024-02-01T19:50:41Z" duration-ms="132513">
+  <suite started-at="2024-02-01T19:55:15Z" name="Suite" finished-at="2024-02-01T19:57:26Z" duration-ms="131131">
     <groups>
     </groups>
-    <test started-at="2024-02-01T19:48:29Z" name="Test" finished-at="2024-02-01T19:50:41Z" duration-ms="132513">
+    <test started-at="2024-02-01T19:55:15Z" name="Test" finished-at="2024-02-01T19:57:26Z" duration-ms="131131">
       <class name="Test.login">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.login@1046d517]" started-at="2024-02-01T19:48:29Z" name="Setup" finished-at="2024-02-01T19:48:36Z" duration-ms="7437" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.login@1046d517]" started-at="2024-02-01T19:55:15Z" name="Setup" finished-at="2024-02-01T19:55:22Z" duration-ms="7762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="LoginTest()[pri:1, instance:Test.login@1046d517]" started-at="2024-02-01T19:48:36Z" name="LoginTest" finished-at="2024-02-01T19:48:43Z" duration-ms="7232" status="PASS">
+        <test-method signature="LoginTest()[pri:1, instance:Test.login@1046d517]" started-at="2024-02-01T19:55:22Z" name="LoginTest" finished-at="2024-02-01T19:55:30Z" duration-ms="7240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method signature="CreateCategoryTest()[pri:3, instance:Test.login@1046d517]" started-at="2024-02-01T19:48:43Z" name="CreateCategoryTest" finished-at="2024-02-01T19:48:56Z" duration-ms="12719" status="FAIL">
+        <test-method signature="CreateCategoryTest()[pri:3, instance:Test.login@1046d517]" started-at="2024-02-01T19:55:30Z" name="CreateCategoryTest" finished-at="2024-02-01T19:55:42Z" duration-ms="12687" status="FAIL">
           <exception class="java.awt.AWTException">
             <message>
               <![CDATA[headless environment]]>
@@ -59,37 +59,37 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateCategoryTest -->
-        <test-method signature="addBrands()[pri:4, instance:Test.login@1046d517]" started-at="2024-02-01T19:48:56Z" name="addBrands" finished-at="2024-02-01T19:49:07Z" duration-ms="11224" status="PASS">
+        <test-method signature="addBrands()[pri:4, instance:Test.login@1046d517]" started-at="2024-02-01T19:55:42Z" name="addBrands" finished-at="2024-02-01T19:55:54Z" duration-ms="11222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addBrands -->
-        <test-method signature="DeleteProduct()[pri:5, instance:Test.login@1046d517]" started-at="2024-02-01T19:49:07Z" name="DeleteProduct" finished-at="2024-02-01T19:49:20Z" duration-ms="12482" status="PASS">
+        <test-method signature="DeleteProduct()[pri:5, instance:Test.login@1046d517]" started-at="2024-02-01T19:55:54Z" name="DeleteProduct" finished-at="2024-02-01T19:56:06Z" duration-ms="12453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteProduct -->
-        <test-method signature="EditProduct()[pri:6, instance:Test.login@1046d517]" started-at="2024-02-01T19:49:20Z" name="EditProduct" finished-at="2024-02-01T19:49:37Z" duration-ms="16704" status="FAIL">
+        <test-method signature="EditProduct()[pri:6, instance:Test.login@1046d517]" started-at="2024-02-01T19:56:06Z" name="EditProduct" finished-at="2024-02-01T19:56:23Z" duration-ms="16721" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='videourl']"}
   (Session info: chrome-headless-shell=121.0.6167.85)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'fv-az888-654', ip: '10.1.0.139', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
+System info: host: 'fv-az1052-129', ip: '10.1.0.120', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5407236a81c39e514fd054d47ab5a29b, findElement {using=xpath, value=//input[@id='videourl']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5407236a81c39e514fd054d47ab5a29b]]>
+Command: [ffbc5694ecfed76cb2bc3d96cd42b1ad, findElement {using=xpath, value=//input[@id='videourl']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41751}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41751/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffbc5694ecfed76cb2bc3d96cd42b1ad]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='videourl']"}
   (Session info: chrome-headless-shell=121.0.6167.85)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'fv-az888-654', ip: '10.1.0.139', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
+System info: host: 'fv-az1052-129', ip: '10.1.0.120', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5407236a81c39e514fd054d47ab5a29b, findElement {using=xpath, value=//input[@id='videourl']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5407236a81c39e514fd054d47ab5a29b
+Command: [ffbc5694ecfed76cb2bc3d96cd42b1ad, findElement {using=xpath, value=//input[@id='videourl']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41751}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41751/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffbc5694ecfed76cb2bc3d96cd42b1ad
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -142,45 +142,114 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EditProduct -->
-        <test-method signature="DeleteCategoryTest()[pri:7, instance:Test.login@1046d517]" started-at="2024-02-01T19:49:37Z" name="DeleteCategoryTest" finished-at="2024-02-01T19:49:53Z" duration-ms="16155" status="PASS">
+        <test-method signature="DeleteCategoryTest()[pri:7, instance:Test.login@1046d517]" started-at="2024-02-01T19:56:23Z" name="DeleteCategoryTest" finished-at="2024-02-01T19:56:39Z" duration-ms="16180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteCategoryTest -->
-        <test-method signature="DeleteBrand()[pri:8, instance:Test.login@1046d517]" started-at="2024-02-01T19:49:53Z" name="DeleteBrand" finished-at="2024-02-01T19:49:53Z" duration-ms="0" status="PASS">
+        <test-method signature="DeleteBrand()[pri:8, instance:Test.login@1046d517]" started-at="2024-02-01T19:56:39Z" name="DeleteBrand" finished-at="2024-02-01T19:56:39Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteBrand -->
-        <test-method signature="CreateChildcategory()[pri:9, instance:Test.login@1046d517]" started-at="2024-02-01T19:49:53Z" name="CreateChildcategory" finished-at="2024-02-01T19:50:05Z" duration-ms="12315" status="PASS">
+        <test-method signature="CreateChildcategory()[pri:9, instance:Test.login@1046d517]" started-at="2024-02-01T19:56:39Z" name="CreateChildcategory" finished-at="2024-02-01T19:56:51Z" duration-ms="12360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateChildcategory -->
-        <test-method signature="DargAndDropTest()[pri:10, instance:Test.login@1046d517]" started-at="2024-02-01T19:50:05Z" name="DargAndDropTest" finished-at="2024-02-01T19:50:11Z" duration-ms="6235" status="PASS">
+        <test-method signature="DargAndDropTest()[pri:10, instance:Test.login@1046d517]" started-at="2024-02-01T19:56:51Z" name="DargAndDropTest" finished-at="2024-02-01T19:56:56Z" duration-ms="4313" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class="m-list__card"])[3]"}
+  (Session info: chrome-headless-shell=121.0.6167.85)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'fv-az1052-129', ip: '10.1.0.120', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ffbc5694ecfed76cb2bc3d96cd42b1ad, findElement {using=xpath, value=(//*[@class="m-list__card"])[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41751}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41751/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffbc5694ecfed76cb2bc3d96cd42b1ad]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class="m-list__card"])[3]"}
+  (Session info: chrome-headless-shell=121.0.6167.85)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'fv-az1052-129', ip: '10.1.0.120', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ffbc5694ecfed76cb2bc3d96cd42b1ad, findElement {using=xpath, value=(//*[@class="m-list__card"])[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41751}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41751/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffbc5694ecfed76cb2bc3d96cd42b1ad
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at Test.login.DargAndDropTest(login.java:312)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DargAndDropTest -->
-        <test-method signature="HideOrUnHideCategoryTest()[pri:11, instance:Test.login@1046d517]" started-at="2024-02-01T19:50:11Z" name="HideOrUnHideCategoryTest" finished-at="2024-02-01T19:50:21Z" duration-ms="9384" status="FAIL">
+        <test-method signature="HideOrUnHideCategoryTest()[pri:11, instance:Test.login@1046d517]" started-at="2024-02-01T19:56:56Z" name="HideOrUnHideCategoryTest" finished-at="2024-02-01T19:57:05Z" duration-ms="9361" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class="fa-solid fa-ellipsis"])[1]"}
   (Session info: chrome-headless-shell=121.0.6167.85)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'fv-az888-654', ip: '10.1.0.139', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
+System info: host: 'fv-az1052-129', ip: '10.1.0.120', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5407236a81c39e514fd054d47ab5a29b, findElement {using=xpath, value=(//*[@class="fa-solid fa-ellipsis"])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5407236a81c39e514fd054d47ab5a29b]]>
+Command: [ffbc5694ecfed76cb2bc3d96cd42b1ad, findElement {using=xpath, value=(//*[@class="fa-solid fa-ellipsis"])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41751}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41751/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffbc5694ecfed76cb2bc3d96cd42b1ad]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class="fa-solid fa-ellipsis"])[1]"}
   (Session info: chrome-headless-shell=121.0.6167.85)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'fv-az888-654', ip: '10.1.0.139', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
+System info: host: 'fv-az1052-129', ip: '10.1.0.120', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5407236a81c39e514fd054d47ab5a29b, findElement {using=xpath, value=(//*[@class="fa-solid fa-ellipsis"])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5407236a81c39e514fd054d47ab5a29b
+Command: [ffbc5694ecfed76cb2bc3d96cd42b1ad, findElement {using=xpath, value=(//*[@class="fa-solid fa-ellipsis"])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41751}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41751/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffbc5694ecfed76cb2bc3d96cd42b1ad
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -232,11 +301,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HideOrUnHideCategoryTest -->
-        <test-method signature="SearchCategoryTest()[pri:12, instance:Test.login@1046d517]" started-at="2024-02-01T19:50:21Z" name="SearchCategoryTest" finished-at="2024-02-01T19:50:34Z" duration-ms="13472" status="PASS">
+        <test-method signature="SearchCategoryTest()[pri:12, instance:Test.login@1046d517]" started-at="2024-02-01T19:57:05Z" name="SearchCategoryTest" finished-at="2024-02-01T19:57:19Z" duration-ms="13684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchCategoryTest -->
-        <test-method signature="CategoryProductsValidation()[pri:13, instance:Test.login@1046d517]" started-at="2024-02-01T19:50:34Z" name="CategoryProductsValidation" finished-at="2024-02-01T19:50:41Z" duration-ms="7109" status="PASS">
+        <test-method signature="CategoryProductsValidation()[pri:13, instance:Test.login@1046d517]" started-at="2024-02-01T19:57:19Z" name="CategoryProductsValidation" finished-at="2024-02-01T19:57:26Z" duration-ms="7124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CategoryProductsValidation -->

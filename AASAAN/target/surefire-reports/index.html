@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 3 failed,   9 passed</span>
+                    <span class="method-stats">12 methods, 4 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Test.login" class="method navigator-link" hash-for-method="CreateCategoryTest">CreateCategoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.login" class="method navigator-link" hash-for-method="DargAndDropTest">DargAndDropTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,11 +137,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Test.login" class="method navigator-link" hash-for-method="CreateChildcategory">CreateChildcategory</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.login" class="method navigator-link" hash-for-method="DargAndDropTest">DargAndDropTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -202,6 +202,36 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="DargAndDropTest">
+                  </a> <!-- DargAndDropTest -->
+                  <span class="method-name">DargAndDropTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[@class=&quot;m-list__card&quot;])[3]&quot;}
+  (Session info: chrome-headless-shell=121.0.6167.85)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;fv-az1052-129&apos;, ip: &apos;10.1.0.120&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-1019-azure&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ffbc5694ecfed76cb2bc3d96cd42b1ad, findElement {using=xpath, value=(//*[@class=&quot;m-list__card&quot;])[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41751}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41751/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffbc5694ecfed76cb2bc3d96cd42b1ad
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Test.login.DargAndDropTest(login.java:312)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="EditProduct">
                   </a> <!-- EditProduct -->
                   <span class="method-name">EditProduct</span>
@@ -209,11 +239,11 @@
   (Session info: chrome-headless-shell=121.0.6167.85)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
-System info: host: &apos;fv-az888-654&apos;, ip: &apos;10.1.0.139&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-1019-azure&apos;, java.version: &apos;11.0.22&apos;
+System info: host: &apos;fv-az1052-129&apos;, ip: &apos;10.1.0.120&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-1019-azure&apos;, java.version: &apos;11.0.22&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5407236a81c39e514fd054d47ab5a29b, findElement {using=xpath, value=//input[@id=&apos;videourl&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5407236a81c39e514fd054d47ab5a29b
+Command: [ffbc5694ecfed76cb2bc3d96cd42b1ad, findElement {using=xpath, value=//input[@id=&apos;videourl&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41751}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41751/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffbc5694ecfed76cb2bc3d96cd42b1ad
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -241,11 +271,11 @@ Session ID: 5407236a81c39e514fd054d47ab5a29b
   (Session info: chrome-headless-shell=121.0.6167.85)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
-System info: host: &apos;fv-az888-654&apos;, ip: &apos;10.1.0.139&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-1019-azure&apos;, java.version: &apos;11.0.22&apos;
+System info: host: &apos;fv-az1052-129&apos;, ip: &apos;10.1.0.120&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-1019-azure&apos;, java.version: &apos;11.0.22&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5407236a81c39e514fd054d47ab5a29b, findElement {using=xpath, value=(//*[@class=&quot;fa-solid fa-ellipsis&quot;])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5407236a81c39e514fd054d47ab5a29b
+Command: [ffbc5694ecfed76cb2bc3d96cd42b1ad, findElement {using=xpath, value=(//*[@class=&quot;fa-solid fa-ellipsis&quot;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41751}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41751/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffbc5694ecfed76cb2bc3d96cd42b1ad
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -283,13 +313,6 @@ Session ID: 5407236a81c39e514fd054d47ab5a29b
                   <a name="CreateChildcategory">
                   </a> <!-- CreateChildcategory -->
                   <span class="method-name">CreateChildcategory</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="DargAndDropTest">
-                  </a> <!-- DargAndDropTest -->
-                  <span class="method-name">DargAndDropTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -392,47 +415,47 @@ data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'EditProduct')
 data.setCell(0, 2, 'Test.login')
-data.setCell(0, 3, 16704);
+data.setCell(0, 3, 16721);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'DeleteCategoryTest')
 data.setCell(1, 2, 'Test.login')
-data.setCell(1, 3, 16155);
+data.setCell(1, 3, 16180);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'SearchCategoryTest')
 data.setCell(2, 2, 'Test.login')
-data.setCell(2, 3, 13472);
+data.setCell(2, 3, 13684);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'CreateCategoryTest')
 data.setCell(3, 2, 'Test.login')
-data.setCell(3, 3, 12719);
+data.setCell(3, 3, 12687);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'DeleteProduct')
 data.setCell(4, 2, 'Test.login')
-data.setCell(4, 3, 12482);
+data.setCell(4, 3, 12453);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'CreateChildcategory')
 data.setCell(5, 2, 'Test.login')
-data.setCell(5, 3, 12315);
+data.setCell(5, 3, 12360);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'addBrands')
 data.setCell(6, 2, 'Test.login')
-data.setCell(6, 3, 11224);
+data.setCell(6, 3, 11222);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'HideOrUnHideCategoryTest')
 data.setCell(7, 2, 'Test.login')
-data.setCell(7, 3, 9384);
+data.setCell(7, 3, 9361);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'LoginTest')
 data.setCell(8, 2, 'Test.login')
-data.setCell(8, 3, 7232);
+data.setCell(8, 3, 7240);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'CategoryProductsValidation')
 data.setCell(9, 2, 'Test.login')
-data.setCell(9, 3, 7109);
+data.setCell(9, 3, 7124);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'DargAndDropTest')
 data.setCell(10, 2, 'Test.login')
-data.setCell(10, 3, 6235);
+data.setCell(10, 3, 4313);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'DeleteBrand')
 data.setCell(11, 2, 'Test.login')
@@ -474,57 +497,59 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">LoginTest</span>
-                <span class="method-start">7443 ms</span>
+                <span class="method-start">7767 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">CreateCategoryTest</span>
-                <span class="method-start">14676 ms</span>
+                <span class="method-start">15009 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addBrands</span>
-                <span class="method-start">27399 ms</span>
+                <span class="method-start">27699 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DeleteProduct</span>
-                <span class="method-start">38623 ms</span>
+                <span class="method-start">38921 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">EditProduct</span>
-                <span class="method-start">51105 ms</span>
+                <span class="method-start">51374 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DeleteCategoryTest</span>
-                <span class="method-start">67826 ms</span>
+                <span class="method-start">68098 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DeleteBrand</span>
-                <span class="method-start">83982 ms</span>
+                <span class="method-start">84278 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreateChildcategory</span>
-                <span class="method-start">83982 ms</span>
+                <span class="method-start">84279 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">DargAndDropTest</span>
-                <span class="method-start">96298 ms</span>
+                <span class="method-start">96640 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">HideOrUnHideCategoryTest</span>
-                <span class="method-start">102533 ms</span>
+                <span class="method-start">100954 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SearchCategoryTest</span>
-                <span class="method-start">111918 ms</span>
+                <span class="method-start">110316 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CategoryProductsValidation</span>
-                <span class="method-start">125391 ms</span>
+                <span class="method-start">124001 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
