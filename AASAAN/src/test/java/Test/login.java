@@ -33,6 +33,12 @@ public class login extends BaseTest{
 		Thread.sleep(3000);
 		LPE.login();
 		System.out.println("Login Sucess1");
+		Thread.sleep(4000);
+		HPE.ClickOnHomePage();
+		System.out.println("Clciked on Home Page");
+		Thread.sleep(4000);
+		HPE.ClickOnProductsPage();
+		System.out.println("Clciked on Products Page");
 	}
 	@Test(priority=2)
 	public void ProductsPageTest() throws InterruptedException
