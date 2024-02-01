@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="125.073" tests="12" errors="0" skipped="0" failures="3">
+<testsuite name="TestSuite" time="125.057" tests="12" errors="0" skipped="0" failures="3">
   <properties>
     <property name="jansi.mode" value="strip"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -60,26 +60,26 @@
     <property name="java.vendor.version" value="Temurin-11.0.22+7"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="LoginTest" classname="Test.login" time="7.227"/>
-  <testcase name="CreateCategoryTest" classname="Test.login" time="12.685">
+  <testcase name="LoginTest" classname="Test.login" time="7.233"/>
+  <testcase name="CreateCategoryTest" classname="Test.login" time="12.723">
     <failure message="headless environment" type="java.awt.AWTException"><![CDATA[java.awt.AWTException: headless environment
 	at java.desktop/java.awt.Robot.<init>(Robot.java:97)
 	at PageEvents.CategoriesPageEvents.UploadTheImage(CategoriesPageEvents.java:140)
 	at Test.login.CreateCategoryTest(login.java:123)
 ]]></failure>
   </testcase>
-  <testcase name="addBrands" classname="Test.login" time="11.228"/>
-  <testcase name="DeleteProduct" classname="Test.login" time="12.513"/>
-  <testcase name="EditProduct" classname="Test.login" time="16.685">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;videourl&apos;]&quot;}&#10;  (Session info: chrome-headless-shell=121.0.6167.85)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;fv-az1543-44&apos;, ip: &apos;10.1.0.178&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-1019-azure&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [17cbacbc50939593011ab951b7e43ee1, findElement {using=xpath, value=//input[@id=&apos;videourl&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39825}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39825/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 17cbacbc50939593011ab951b7e43ee1" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='videourl']"}
+  <testcase name="addBrands" classname="Test.login" time="11.224"/>
+  <testcase name="DeleteProduct" classname="Test.login" time="12.482"/>
+  <testcase name="EditProduct" classname="Test.login" time="16.721">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;videourl&apos;]&quot;}&#10;  (Session info: chrome-headless-shell=121.0.6167.85)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;fv-az888-654&apos;, ip: &apos;10.1.0.139&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-1019-azure&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5407236a81c39e514fd054d47ab5a29b, findElement {using=xpath, value=//input[@id=&apos;videourl&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5407236a81c39e514fd054d47ab5a29b" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='videourl']"}
   (Session info: chrome-headless-shell=121.0.6167.85)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'fv-az1543-44', ip: '10.1.0.178', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
+System info: host: 'fv-az888-654', ip: '10.1.0.139', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17cbacbc50939593011ab951b7e43ee1, findElement {using=xpath, value=//input[@id='videourl']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39825}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39825/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 17cbacbc50939593011ab951b7e43ee1
+Command: [5407236a81c39e514fd054d47ab5a29b, findElement {using=xpath, value=//input[@id='videourl']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5407236a81c39e514fd054d47ab5a29b
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -100,20 +100,20 @@ Session ID: 17cbacbc50939593011ab951b7e43ee1
 	at Test.login.EditProduct(login.java:231)
 </failure>
   </testcase>
-  <testcase name="DeleteCategoryTest" classname="Test.login" time="16.19"/>
+  <testcase name="DeleteCategoryTest" classname="Test.login" time="16.156"/>
   <testcase name="DeleteBrand" classname="Test.login" time="0"/>
-  <testcase name="CreateChildcategory" classname="Test.login" time="12.331"/>
-  <testcase name="DargAndDropTest" classname="Test.login" time="6.206"/>
-  <testcase name="HideOrUnHideCategoryTest" classname="Test.login" time="9.386">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[@class=&quot;fa-solid fa-ellipsis&quot;])[1]&quot;}&#10;  (Session info: chrome-headless-shell=121.0.6167.85)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;fv-az1543-44&apos;, ip: &apos;10.1.0.178&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-1019-azure&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [17cbacbc50939593011ab951b7e43ee1, findElement {using=xpath, value=(//*[@class=&quot;fa-solid fa-ellipsis&quot;])[1]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39825}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39825/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 17cbacbc50939593011ab951b7e43ee1" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class="fa-solid fa-ellipsis"])[1]"}
+  <testcase name="CreateChildcategory" classname="Test.login" time="12.315"/>
+  <testcase name="DargAndDropTest" classname="Test.login" time="6.236"/>
+  <testcase name="HideOrUnHideCategoryTest" classname="Test.login" time="9.384">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[@class=&quot;fa-solid fa-ellipsis&quot;])[1]&quot;}&#10;  (Session info: chrome-headless-shell=121.0.6167.85)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;fv-az888-654&apos;, ip: &apos;10.1.0.139&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-1019-azure&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5407236a81c39e514fd054d47ab5a29b, findElement {using=xpath, value=(//*[@class=&quot;fa-solid fa-ellipsis&quot;])[1]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5407236a81c39e514fd054d47ab5a29b" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class="fa-solid fa-ellipsis"])[1]"}
   (Session info: chrome-headless-shell=121.0.6167.85)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'fv-az1543-44', ip: '10.1.0.178', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
+System info: host: 'fv-az888-654', ip: '10.1.0.139', os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-1019-azure', java.version: '11.0.22'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17cbacbc50939593011ab951b7e43ee1, findElement {using=xpath, value=(//*[@class="fa-solid fa-ellipsis"])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39825}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:39825/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 17cbacbc50939593011ab951b7e43ee1
+Command: [5407236a81c39e514fd054d47ab5a29b, findElement {using=xpath, value=(//*[@class="fa-solid fa-ellipsis"])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37947/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5407236a81c39e514fd054d47ab5a29b
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -133,6 +133,6 @@ Session ID: 17cbacbc50939593011ab951b7e43ee1
 	at Test.login.HideOrUnHideCategoryTest(login.java:333)
 </failure>
   </testcase>
-  <testcase name="SearchCategoryTest" classname="Test.login" time="13.485"/>
-  <testcase name="CategoryProductsValidation" classname="Test.login" time="7.137"/>
+  <testcase name="SearchCategoryTest" classname="Test.login" time="13.472"/>
+  <testcase name="CategoryProductsValidation" classname="Test.login" time="7.111"/>
 </testsuite>
