@@ -43,9 +43,9 @@ jobs:
       if: always()
       with:
         files: |
-          AASAAN/test-output/testng-results.xml
-          AASAAN/test-output/testng-failed.xml
           AASAAN/test-output/Default suite/Default test.xml
+          AASAAN/test-output/Default suite/Default test.html
+          AASAAN/test-output/Default suite/testng-failed.xml
             
     - name: Archive code coverage results
       uses: actions/upload-artifact@v4
