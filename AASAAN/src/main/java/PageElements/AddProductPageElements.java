@@ -25,7 +25,7 @@ public interface AddProductPageElements {
 	String SelectCustomField="//*[@class='content__left' and text()='Select Custom Field']";
 	String SelectCustomFieldValueSelect="//*[@class='body-md ls-md mb-0' and text()='Test2']";
 	String SelectCustomeFieldClick="(//*[@class='select__btn'])[4]";
-	String Manage="";
+	//String Manage="";
 	String TrustedBadge="";
 	String SizeChart="";
 	
